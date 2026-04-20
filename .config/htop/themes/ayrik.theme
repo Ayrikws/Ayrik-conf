@@ -1,0 +1,71 @@
+# Main colors
+main_bg=0
+main_fg=255
+title=255
+hi_fg=147
+selected_bg=237
+selected_fg=147
+inactive_fg=243
+
+# Graph text
+graph_text=218
+
+# Meter background
+meter_bg=237
+
+# Process misc
+proc_misc=218
+
+# Box colors
+cpu_box=218
+mem_box=147
+net_box=117
+proc_box=151
+
+# Divider
+div_line=240
+
+# Temperature gradient
+temp_start=151
+temp_mid=216
+temp_end=204
+
+# CPU gradient
+cpu_start=218
+cpu_mid=147
+cpu_end=117
+
+# Memory free
+free_start=147
+free_mid=117
+free_end=152
+
+# Cached
+cached_start=117
+cached_mid=147
+cached_end=183
+
+# Available
+available_start=216
+available_mid=211
+available_end=204
+
+# Used
+used_start=151
+used_mid=152
+used_end=117
+
+# Download
+download_start=218
+download_mid=147
+download_end=117
+
+# Upload
+upload_start=151
+upload_mid=152
+upload_end=117
+
+# Process
+process_start=218
+process_mid=147
+process_end=117

@@ -1,0 +1,96 @@
+/* ======= GTK 4 custom theme ======= */
+/* Dark theme aligned with Hyprland/Breeze-like system palette */
+
+@define-color bg_color      #141618;
+@define-color base_color    #202326;
+@define-color surface_color #292c30;
+@define-color border_color  #57595c;
+@define-color text_color    #fcfcfc;
+@define-color accent_color  #3daee9;
+@define-color success_color #27ae60;
+@define-color warning_color #f67400;
+@define-color error_color   #da4453;
+
+/* General background */
+window, dialog, popover, .background {
+    background-color: @bg_color;
+    color: @text_color;
+}
+
+/* Buttons */
+button {
+    background-color: @surface_color;
+    color: @text_color;
+    border: 1px solid @border_color;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+button:hover {
+    background-color: shade(@accent_color, 1.2);
+    color: @bg_color;
+}
+button:active {
+    background-color: @accent_color;
+    color: @bg_color;
+}
+
+/* Entries & text fields */
+entry, textview, spinbutton, combobox {
+    background-color: @base_color;
+    color: @text_color;
+    border: 1px solid @border_color;
+    border-radius: 4px;
+}
+entry:focus, textview:focus {
+    border-color: @accent_color;
+}
+
+/* Header bars */
+headerbar {
+    background-color: @surface_color;
+    color: @text_color;
+    border-bottom: 1px solid @border_color;
+}
+headerbar .title {
+    color: @text_color;
+    font-weight: bold;
+}
+headerbar button {
+    background-color: transparent;
+    border: none;
+    color: @text_color;
+}
+headerbar button:hover {
+    background-color: rgba(61, 174, 233, 0.15);
+}
+
+/* Selection (lists, text highlights) */
+selection {
+    background-color: @accent_color;
+    color: @bg_color;
+}
+
+/* Scrollbars */
+scrollbar slider {
+    background-color: @surface_color;
+    border-radius: 4px;
+}
+scrollbar slider:hover {
+    background-color: @accent_color;
+}
+
+/* Tooltips */
+tooltip {
+    background-color: @surface_color;
+    border: 1px solid @border_color;
+    color: @text_color;
+}
+
+/* Links */
+a {
+    color: @accent_color;
+}
+a:visited {
+    color: #9b59b6; /* your link_visited */
+}
+

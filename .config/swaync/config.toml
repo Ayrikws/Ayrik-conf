@@ -1,0 +1,6 @@
+[general]
+update_interval = 1.0
+
+[notifications]
+max_history = 50
+

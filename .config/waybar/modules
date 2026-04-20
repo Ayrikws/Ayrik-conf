@@ -1,0 +1,233 @@
+{
+  "hyprland/workspaces": {
+    "active-only": true,
+    "all-outputs": false,
+    "format": "{name}",
+    "show-special": false,
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "format-name": {
+      "active": "[1]",
+      "default": "[ ]"
+    }
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": " [タイム] {:%H:%M} ",
+    "format-alt": " [デーツ] {:%H:%M  [デイ]  %Y, %d %B, %A} ",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "days": "<span color='#ebdbb2'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ebdbb2'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
+    },
+    "actions": {
+      "on-click-right": "mode",
+      "on-click-forward": "tz_up",
+      "on-click-backward": "tz_down",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
+    }
+  },
+  "hyprland/window": {
+    "format": " {} ",
+    "max-length": 60,
+    "separate-outputs": true,
+    "offscreen-css": true,
+    "offscreen-css-text": "(inactive)",
+    "rewrite": {
+      "(.*) — Mozilla Firefox": " $1",
+      "(.*) - fish": "> [$1]",
+      "(.*) - zsh": "> [$1]",
+      "(.*) - kitty": "> [$1]"
+    }
+  },
+
+  "memory": {
+    "interval": 10,
+    "format": "{used:0.1f} [ラム] ",
+    "format-alt-click": "click",
+    "tooltip": true,
+    "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
+    "on-click-right": "kitty -c ~/.config/kitty/kitty.conf --title btop sh -c 'btop'"
+  },
+
+  "mpris": {
+    "interval": 10,
+    "format": " {title} ",
+    "format-paused": " {title} {status_icon} ",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "scroll-step": 5.0,
+    "smooth-scrolling-threshold": 1,
+    "status-icons": {
+      "paused": "||",
+      "playing": ">",
+      "stopped": ""
+    },
+    "max-length": 30
+  },
+
+  "pulseaudio": {
+    "format": " {volume}% {icon} ",
+    "format-bluetooth": " [BT] {volume}% {icon} ",
+    "format-muted": "[MUTE]",
+    "format-icons": {
+      "headphone": "[ヘッドホン]",
+      "hands-free": "[]",
+      "headset": "[ヘッドセット]",
+      "phone": "[]",
+      "portable": "[]",
+      "car": "[CAR]",
+      "default": [ "[サウンド]"]
+      },
+    "ignored-sinks": ["Easy Effects Sink"],
+    "scroll-step": 5.0,
+    "on-click": "pavucontrol -t 3",
+    "tooltip-format": "{icon} {desc} | {volume}%",
+    "smooth-scrolling-threshold": 1
+  },
+    "temperature": {
+    "critical-threshold": 82,
+    "format-critical": "{temperatureC}°C {icon}",
+    "format": "{temperatureC}°C {icon} ",
+    "format-icons": ["[T]"],
+    "on-click-right": "kitty -c ~/.config/kitty/kitty.conf --title nvtop sh -c 'nvtop'"
+  },
+
+  "custom/swaync": {
+    "tooltip": true,
+    "format": " {} {icon} ",
+    "format-icons": {
+      "notification": "[お知らせ]<span foreground='red'><sup>+</sup></span>",
+      "none": "[お知らせ]",
+      "dnd-notification": "[通知オフ]<span foreground='red'><sup>+</sup></span>",
+      "dnd-none": "[通知オフ]",
+      "inhibited-notification": "[I]<span foreground='red'><sup>+</sup></span>",
+      "inhibited-none": "[I]",
+      "dnd-inhibited-notification":
+        "[DND-I]<span foreground='red'><sup>+</sup></span>",
+      "dnd-inhibited-none": "[DND-I]"
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  "wlr/taskbar": {
+    "format": " {icon} ",
+    "icon-size": 20,
+    "all-outputs": false,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "rofi",
+      "firefox",
+      "kitty",
+      "v2rayN",
+      "jetbrains-studio",
+      "Brave-browser",
+      "Spotify",
+      "Zen Browser"
+    ]
+  },
+
+  "custom/cava": {
+    "exec": "~/.config/waybar/scripts/waybarCava.sh",
+    "format": "{}",
+    "on-click": "kitty -c ~/.config/kitty/kitty.conf nvim -c cd ~/.config/"
+  },
+      "custom/battery": {
+        "exec": "sh ~/bin/battery.sh --status --discharged-color \"#f38ba8\" --charged-color \"#EBDBB2\" | cat",
+        "return-type": "raw",
+	    "format": "{}  ",
+        "interval": 3,
+	    "rotate": 0,
+	    "on-click": "sh ~/bin/battery.sh --notify",
+        "tooltip": false
+    },
+    "custom/brightness": {
+        "exec": "sh ~/bin/brightness.sh  --status --color \"#EBDBB2\" | cat",
+        "return-type": "raw",
+        "format": "{}",
+        "interval": 1,
+        "rotate": 0,
+        "on-scroll-up": "sh ~/bin/brightness.sh --up",
+        "on-scroll-down": "sh ~/bin/brightness.sh --down",
+        "on-click-left": "sh ~/bin/brightness.sh --max",
+        "on-click-right": "sh ~/bin/brightness.sh --min",
+        "tooltip": false
+    },
+
+    "custom/system-update": {
+        "exec": "sh ~/bin/system-update.sh --status --unupdated-color \"#fab387\" --updated-color \"#EBDBB2\" | cat",
+        "return-type": "raw",
+        "format": "{}",
+        "rotate": 0,
+        "on-click": "CHECKUPDATES_DB=\"/tmp/checkup-db-${UID}-$$\" sh ~/bin/system-update.sh",
+        "interval": 86400,
+        "tooltip": false
+    },
+    "custom/networkmanager": {
+        "exec": "sh ~/bin/rofi-menus/network-manager.sh --status --disabled-color \"#f38ba8\" --enabled-color \"#EBDBB2\" | cat",
+        "return-type": "raw",
+        "format": "{}",
+        "interval": 3,
+        "rotate": 0,
+        "on-click": "sh ~/bin/rofi-menus/network-manager.sh",
+        "tooltip": false
+    },
+    "tray": {
+        "icon-size": 18,
+        "rotate": 0,
+        "spacing": 5
+    },
+		"hyprland/language": {
+        "format": "{short} {variant}",
+        "rotate": 0,
+        "min-length": 2,
+        "tooltip": false
+    },
+		"power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
+  }
+},
+
+		"custom/vpn": {
+        "exec": "sh ~/bin/rofi-menus/vpn-manager.sh --status --disabled-color \"#f38ba8\" --enabled-color \"#a6e3a1\" | cat",
+        "return-type": "raw",
+        "format": "{} ",
+        "interval": 3,
+        "rotate": 0,
+        "on-click": "sh ~/bin/rofi-menus/vpn-manager.sh",
+        "tooltip": false
+    },
+"custom/nightlight": {
+    "format": "{}  ",
+    "exec": "pgrep -x hyprsunset > /dev/null && echo '󰖔 [つける]' || echo '󰖨 [けす]'",
+    "on-click": "~/.config/waybar/scripts/night-mode.sh",
+    "interval": 5
+}
+
+
+}

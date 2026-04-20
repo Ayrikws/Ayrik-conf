@@ -1,0 +1,54 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-width": 460,
+  "control-center-height": 780,
+  "control-center-margin-top": 20,
+  "control-center-margin-bottom": 20,
+  "control-center-margin-right": 10,
+  "notification-window-width": 420,
+  "notification-icon-size": 64,
+  "notification-body-image-height": 160,
+  "transition-time": 150,
+  "notification-urgency": {
+    "low": { "timeout": 2000 },
+    "normal": { "timeout": 3000 },
+    "critical": { "timeout": 5000 }
+  },
+  "widgets": [
+    "title",
+    "dnd",
+    "notifications",
+    "mpris"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "通知",
+      "clear-all-button": true,
+      "button-text": "すべてクリア"
+    },
+    "dnd": {
+      "text": "おやすみモード"
+    },
+    "mpris": {
+      "image-size": 86,
+      "image-radius": 10,
+      "format": "{player_icon} {dynamic}",
+      "format-paused": "{status_icon} <i>{dynamic}</i>",
+      "player-icons": {
+        "default": "▶",
+        "mpv": "🎵"
+      },
+      "status-icons": {
+        "paused": "⏸"
+      },
+      "max-length": 1000
+    },
+    "notifications": {
+      "timeout": 4000
+    }
+  }
+}
+

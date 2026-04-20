@@ -1,0 +1,11 @@
+* {
+  main-bg:        rgba(22, 26, 40, 0.90);   
+  main-fg:        rgba(235, 219, 178, 1.00);
+  main-br:        rgba(235, 219, 178, 0.80);
+  main-ex:        rgba(215, 153, 33, 1.00);
+  select-bg:      rgba(235, 219, 178, 0.80);
+  select-fg:      rgba(22, 26, 40, 1.00);
+  separatorcolor: rgba(80, 73, 69, 0.70);
+  border-color:   rgba(80, 73, 69, 0.70);
+}
+

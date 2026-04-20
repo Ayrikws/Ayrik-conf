@@ -1,0 +1,104 @@
+{
+	"logo": {
+		"type": "kitty",
+		"source": "~/.config/fastfetch/archlinuxlogo.png",
+		"height": 22,
+		"padding": { "left": 1, "right": 1 }
+	},
+
+	"modules": [
+		{
+			"type": "title",
+			"key": "パイロット",
+			"keyColor": "#82AFFF"
+		},
+		{
+			"type": "custom",
+			"format": "⚡━━━━━━━━━━━✦ GUNDAM SYSTEM ✦━━━━━━━━━━━⚡"
+		},
+		{
+			"type": "kernel",
+			"key": "カーネル (Kernel)",
+			"keyColor": "#F2A4C6"
+		},
+		{
+			"type": "custom",
+    			"key": "モビルスーツ (Mobile Suit)",
+    			"keyColor": "#B29FFF",
+    			"format": "Mighty Strike Freedom"
+  		},
+		{
+			"type": "os",
+			"key": "OSシステム",
+			"keyColor": "#B29FFF"
+		},
+		{
+			"type": "uptime",
+			"key": "稼働時間 (Uptime)",
+			"keyColor": "#82AFFF"
+		},
+		{
+			"type": "packages",
+			"key": "パッケージ数",
+			"keyColor": "#B29FFF"
+		},
+		{
+			"type": "shell",
+			"key": "シェル",
+			"keyColor": "#EBBCBA"
+		},
+		{
+			"type": "wm",
+			"key": "コックピット (WM)",
+			"keyColor": "#F2A4C6",
+			"format": "{1} {version}"
+		},
+		{
+			"type": "terminal",
+			"key": "端末 (Terminal)",
+			"keyColor": "#82AFFF"
+		},
+		{
+			"type": "cpu",
+			"key": "CPUユニット",
+			"keyColor": "#B29FFF",
+			"format": "{1}"
+		},
+		{
+			"type": "gpu",
+			"key": "GPUユニット",
+			"keyColor": "#F2A4C6",
+			"format": "{1} {2} @ {12}"
+		},
+		{
+			"type": "memory",
+			"key": "メモリー",
+			"keyColor": "#82AFFF"
+		},
+		{
+			"type": "swap",
+			"key": "スワップ領域",
+			"keyColor": "#EBBCBA"
+		},
+		{
+			"type": "disk",
+			"key": "ストレージ",
+			"keyColor": "#B29FFF"
+		},
+		{
+			"type": "battery",
+			"key": "エネルギー残量",
+			"keyColor": "#F2A4C6"
+		},
+		{
+			"type": "locale",
+			"key": "ロケール",
+			"keyColor": "#EBBCBA"
+		},
+		{
+			"type": "custom",
+			"format": "⚡━━━━━━━━━━━✦ SYSTEM END ✦━━━━━━━━━━━⚡"
+		}
+	]
+}
+

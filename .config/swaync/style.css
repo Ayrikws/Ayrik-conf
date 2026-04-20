@@ -1,0 +1,155 @@
+@define-color base      #282828; /* Dark background */
+@define-color surface   #282828; /* Surface for cards/widgets */
+@define-color overlay   #282828; /* Hover color / borders */
+@define-color text      #ebdbb2; /* Main text (matches Waybar) */
+
+@define-color beige     #ebdbb2; /* Warm beige for borders */
+@define-color aqua      #181927; /* Secondary accent */
+@define-color yellow    #d79921; /* Highlights */
+@define-color orange    #d65d0e;
+@define-color green     #98971a;
+@define-color red       #cc241d;
+
+/* --- General Window Styling --- */
+* {
+    color: @text;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.blank-window {
+    background: transparent;
+}
+
+.control-center {
+    background: alpha(@base, 0.75); /* Semi-transparent for blur effect */
+    border: 2px solid @beige;
+    border-radius: 16px;
+    margin: 0;
+}
+
+/* --- Notifications --- */
+.notification-row {
+    margin: 8px 0;
+    border-radius: 12px;
+}
+
+.notification {
+    background: alpha(@surface, 0.50);
+    border: 1px solid alpha(@overlay, 0.40);
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.notification .close-button {
+    background: transparent;
+    border-radius: 100%;
+    min-width: 28px;
+    min-height: 28px;
+}
+
+.notification .close-button:hover {
+    background: @overlay;
+}
+
+.notification-default-action, .notification-action {
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px;
+    background: @overlay;
+    border: 1px solid @beige;
+}
+
+.notification-default-action:hover, .notification-action:hover {
+    background: @beige;
+    color: @base;
+}
+
+.summary {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: @beige;
+}
+
+.body {
+    font-size: 1em;
+}
+
+.time {
+    font-size: 0.9em;
+    color: @beige;
+}
+
+/* --- Widgets --- */
+
+/* Title Widget ("通知") */
+.widget-title {
+    margin: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: @beige;
+}
+
+.widget-title button {
+    font-size: 0.8em;
+    padding: 4px 12px;
+    background: @surface;
+    border: 1px solid @overlay;
+    border-radius: 8px;
+}
+
+.widget-title button:hover {
+    background: @overlay;
+}
+
+/* DND Widget ("おやすみモード") */
+.widget-dnd {
+    margin: 10px 15px;
+    font-size: 1.1em;
+    color: @beige;
+}
+
+.widget-dnd > switch {
+    background: @surface;
+    border-radius: 12px;
+    box-shadow: none;
+    padding: 2px;
+    border: 1px solid @overlay;
+}
+
+.widget-dnd > switch:checked {
+    background: @beige;
+}
+
+.widget-dnd > switch slider {
+    background: @text;
+    border-radius: 100%;
+}
+
+/* Media Player Widget */
+.widget-mpris {
+    margin: 10px 15px;
+    padding: 15px;
+    background: alpha(@surface, 0.7);
+    border-radius: 12px;
+    border: 1px solid @overlay;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: @beige;
+}
+
+.widget-mpris .widget-mpris-player .widget-mpris-subtitle {
+    color: @yellow;
+}
+
+.widget-mpris button {
+    padding: 5px;
+}
+
+.widget-mpris button:hover {
+    color: @beige;
+}
+

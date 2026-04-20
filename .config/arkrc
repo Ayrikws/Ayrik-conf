@@ -1,0 +1,15 @@
+[ExtractDialog]
+1920x1080 screen: Window-Maximized=true
+2 screens: Window-Maximized=true
+DirHistory[$e]=$HOME/Downloads/fontawesome-free-7.0.0-desktop/fontawesome-free-7.0.0-desktop/New Folder/,$HOME/Downloads/,$HOME/Downloads/fontawesome-free-7.0.0-desktop/fontawesome-free-7.0.0-desktop/New Folder 2/New Folder/,$HOME/Videos/,/run/user/1000/gvfs/mtp:host=Xiaomi_Redmi_9T_1a0ae1980721/Internal shared storage/Android/data/org.thunderdog.challegram/files/x_account1/documents/,$HOME/Downloads/fontawesome-free-7.0.0-desktop/fontawesome-free-7.0.0-desktop/New Folder 2/,$HOME/Videos/star wars clone wars /,$HOME/Downloads/Fonts/usr/New Folder/,$HOME/Downloads/Fonts/usr/,$HOME/Documents/Books/
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+StatusBar=Disabled
+splitterSizes=1204,122
+
+[Viewer]
+StatusBar=Disabled

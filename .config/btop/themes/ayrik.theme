@@ -1,0 +1,82 @@
+# Main background – keep translucent feeling
+theme[main_bg]="#1e1e2ee0"
+
+# Main text color – soft white
+theme[main_fg]="#e6e9f0"
+
+# Title color for boxes
+theme[title]="#e6e9f0"
+
+# Highlight color (Arch lavender-blue)
+theme[hi_fg]="#a5b4f9"
+
+# Background color of selected item
+theme[selected_bg]="#313244"
+theme[selected_fg]="#a5b4f9"
+
+# Inactive/disabled text
+theme[inactive_fg]="#7f849c"
+
+# Graph text – pastel pink like Arch left side
+theme[graph_text]="#f2b3d0"
+
+# Percentage meters background
+theme[meter_bg]="#313244"
+
+# Misc (processes mini graphs, details text)
+theme[proc_misc]="#f2b3d0"
+
+# Box outlines matching Arch tri-color gradient
+theme[cpu_box]="#f2b3d0" # Pink
+theme[mem_box]="#a5b4f9" # Lavender
+theme[net_box]="#89dceb" # Sky
+theme[proc_box]="#a6e3a1" # Soft green accent
+
+# Divider lines
+theme[div_line]="#585b70"
+
+# Temperature gradient
+theme[temp_start]="#a6e3a1"
+theme[temp_mid]="#fab387"
+theme[temp_end]="#f38ba8"
+
+# CPU gradient (Pink -> Lavender -> Sky Blue like Arch logo)
+theme[cpu_start]="#f2b3d0"
+theme[cpu_mid]="#a5b4f9"
+theme[cpu_end]="#89dceb"
+
+# Memory/Disk free
+theme[free_start]="#a5b4f9"
+theme[free_mid]="#89dceb"
+theme[free_end]="#94e2d5"
+
+# Cached
+theme[cached_start]="#89dceb"
+theme[cached_mid]="#a5b4f9"
+theme[cached_end]="#cba6f7"
+
+# Available
+theme[available_start]="#fab387"
+theme[available_mid]="#eba0ac"
+theme[available_end]="#f38ba8"
+
+# Used
+theme[used_start]="#a6e3a1"
+theme[used_mid]="#94e2d5"
+theme[used_end]="#89dceb"
+
+# Download graph
+theme[download_start]="#f2b3d0"
+theme[download_mid]="#a5b4f9"
+theme[download_end]="#89dceb"
+
+# Upload graph
+theme[upload_start]="#a6e3a1"
+theme[upload_mid]="#94e2d5"
+theme[upload_end]="#89dceb"
+
+# Process gradients – Arch pastels
+theme[process_start]="#f2b3d0"
+theme[process_mid]="#a5b4f9"
+theme[process_end]="#89dceb"
+

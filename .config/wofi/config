@@ -1,0 +1,11 @@
+show=drun
+prompt=  Search...
+lines=10
+location=center
+width=40%
+height=50%
+allow_markup=true
+hide_scroll=true
+matching=fuzzy
+no_actions=true
+

@@ -1,0 +1,40 @@
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 0,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 0,
+"margin-left": 0,
+"margin-right": 0,
+"margin-bottom": 0,
+
+"modules-left": [
+  "hyprland/workspaces",
+  "clock",
+  "custom/cava", 
+  "mpris",
+  "tray",
+	],
+
+"modules-center": [
+	"hyprland/window",
+	], 
+
+"modules-right": [
+	"custom/system-update",
+    "power-profiles-daemon",
+	"pulseaudio",
+    "custom/nightlight",
+	"custom/brightness",
+	"memory",
+	"custom/battery",
+	"custom/vpn",
+	"custom/networkmanager",
+	"hyprland/language",
+	"custom/swaync"
+	]
+}

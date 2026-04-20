@@ -1,0 +1,27 @@
+theme = gruvbox
+
+font-family = "Meslo LGS Nerd Font Mono"
+font-size = 16
+
+background-opacity = 0.80
+background-blur = true     
+window-padding-x = 30
+window-padding-y = 30
+window-decoration = false
+gtk-titlebar = false
+
+command = /bin/zsh --interactive
+
+shell-integration = none
+
+cursor-style = block
+cursor-style-blink = false
+
+copy-on-select = true
+mouse-hide-while-typing = false
+
+window-width = 78
+window-height = 23
+window-save-state = default
+
+confirm-close-surface = false

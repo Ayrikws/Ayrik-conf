@@ -1,0 +1,122 @@
+current-wtheme: default
+current-wwallpaper: /home/ayrik/.config/ayrik/wallpapers/19.png
+current-xtheme: default
+current-xwallpaper: ~/.config/ayrik/wallpapers/19.png
+custom-wallpapers:
+- ~/.config/ayrik/wallpapers/1.png
+- ~/.config/ayrik/wallpapers/2.png
+- ~/.config/ayrik/wallpapers/3.png
+- ~/.config/ayrik/wallpapers/4.png
+- ~/.config/ayrik/wallpapers/5.png
+- ~/.config/ayrik/wallpapers/6.png
+- ~/.config/ayrik/wallpapers/7.png
+- ~/.config/ayrik/wallpapers/8.png
+- ~/.config/ayrik/wallpapers/9.png
+- ~/.config/ayrik/wallpapers/10.png
+- ~/.config/ayrik/wallpapers/11.png
+- ~/.config/ayrik/wallpapers/12.png
+- ~/.config/ayrik/wallpapers/13.png
+- ~/.config/ayrik/wallpapers/14.png
+- ~/.config/ayrik/wallpapers/15.png
+- ~/.config/ayrik/wallpapers/16.png
+- ~/.config/ayrik/wallpapers/17.png
+- ~/.config/ayrik/wallpapers/18.png
+- ~/.config/ayrik/wallpapers/19.png
+- ~/.config/ayrik/wallpapers/20.png
+- ~/.config/ayrik/wallpapers/21.png
+- ~/.config/ayrik/wallpapers/22.png
+- ~/.config/ayrik/wallpapers/23.png
+- ~/.config/ayrik/wallpapers/24.png
+- ~/.config/ayrik/wallpapers/25.png
+- ~/.config/ayrik/wallpapers/26.png
+- ~/.config/ayrik/wallpapers/27.png
+- ~/.config/ayrik/wallpapers/28.png
+- ~/.config/ayrik/wallpapers/29.png
+- ~/.config/ayrik/wallpapers/30.png
+- ~/.config/ayrik/wallpapers/31.png
+- ~/.config/ayrik/wallpapers/32.png
+- ~/.config/ayrik/wallpapers/33.png
+- ~/.config/ayrik/wallpapers/34.png
+- ~/.config/ayrik/wallpapers/35.png
+- ~/.config/ayrik/wallpapers/36.png
+- ~/.config/ayrik/wallpapers/37.png
+- ~/.config/ayrik/wallpapers/38.png
+- ~/.config/ayrik/wallpapers/39.png
+- ~/.config/ayrik/wallpapers/40.png
+- ~/.config/ayrik/wallpapers/41.png
+- ~/.config/ayrik/wallpapers/42.png
+- ~/.config/ayrik/wallpapers/43.png
+- ~/.config/ayrik/wallpapers/44.png
+- ~/.config/ayrik/wallpapers/45.png
+- ~/.config/ayrik/wallpapers/46.png
+- ~/.config/ayrik/wallpapers/47.png
+- ~/.config/ayrik/wallpapers/48.png
+- ~/.config/ayrik/wallpapers/49.png
+- ~/.config/ayrik/wallpapers/50.png
+- ~/.config/ayrik/wallpapers/51.png
+- ~/.config/ayrik/wallpapers/52.png
+- ~/.config/ayrik/wallpapers/53.png
+- ~/.config/ayrik/wallpapers/54.png
+- ~/.config/ayrik/wallpapers/55.png
+- ~/.config/ayrik/wallpapers/56.png
+- ~/.config/ayrik/wallpapers/57.png
+themes:
+  default:
+    available_wallpapers:
+    - ~/.config/ayrik/wallpapers/1.png
+    - ~/.config/ayrik/wallpapers/2.png
+    - ~/.config/ayrik/wallpapers/3.png
+    - ~/.config/ayrik/wallpapers/4.png
+    - ~/.config/ayrik/wallpapers/5.png
+    - ~/.config/ayrik/wallpapers/6.png
+    - ~/.config/ayrik/wallpapers/7.png
+    - ~/.config/ayrik/wallpapers/8.png
+    - ~/.config/ayrik/wallpapers/9.png
+    - ~/.config/ayrik/wallpapers/10.png
+    - ~/.config/ayrik/wallpapers/11.png
+    - ~/.config/ayrik/wallpapers/12.png
+    - ~/.config/ayrik/wallpapers/13.png
+    - ~/.config/ayrik/wallpapers/14.png
+    - ~/.config/ayrik/wallpapers/15.png
+    - ~/.config/ayrik/wallpapers/16.png
+    - ~/.config/ayrik/wallpapers/17.png
+    - ~/.config/ayrik/wallpapers/18.png
+    - ~/.config/ayrik/wallpapers/19.png
+    - ~/.config/ayrik/wallpapers/20.png
+    - ~/.config/ayrik/wallpapers/21.png
+    - ~/.config/ayrik/wallpapers/22.png
+    - ~/.config/ayrik/wallpapers/23.png
+    - ~/.config/ayrik/wallpapers/24.png
+    - ~/.config/ayrik/wallpapers/25.png
+    - ~/.config/ayrik/wallpapers/26.png
+    - ~/.config/ayrik/wallpapers/27.png
+    - ~/.config/ayrik/wallpapers/28.png
+    - ~/.config/ayrik/wallpapers/29.png
+    - ~/.config/ayrik/wallpapers/30.png
+    - ~/.config/ayrik/wallpapers/31.png
+    - ~/.config/ayrik/wallpapers/32.png
+    - ~/.config/ayrik/wallpapers/33.png
+    - ~/.config/ayrik/wallpapers/34.png
+    - ~/.config/ayrik/wallpapers/35.png
+    - ~/.config/ayrik/wallpapers/36.png
+    - ~/.config/ayrik/wallpapers/37.png
+    - ~/.config/ayrik/wallpapers/38.png
+    - ~/.config/ayrik/wallpapers/39.png
+    - ~/.config/ayrik/wallpapers/40.png
+    - ~/.config/ayrik/wallpapers/41.png
+    - ~/.config/ayrik/wallpapers/42.png
+    - ~/.config/ayrik/wallpapers/43.png
+    - ~/.config/ayrik/wallpapers/44.png
+    - ~/.config/ayrik/wallpapers/45.png
+    - ~/.config/ayrik/wallpapers/46.png
+    - ~/.config/ayrik/wallpapers/47.png
+    - ~/.config/ayrik/wallpapers/48.png
+    - ~/.config/ayrik/wallpapers/49.png
+    - ~/.config/ayrik/wallpapers/50.png
+    - ~/.config/ayrik/wallpapers/51.png
+    - ~/.config/ayrik/wallpapers/52.png
+    - ~/.config/ayrik/wallpapers/53.png
+    - ~/.config/ayrik/wallpapers/54.png
+    - ~/.config/ayrik/wallpapers/55.png
+    - ~/.config/ayrik/wallpapers/56.png
+    - ~/.config/ayrik/wallpapers/57.png
