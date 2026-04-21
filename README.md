@@ -1,10 +1,12 @@
 # Ayrik-Dotfiles
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?logo=arch-linux&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hyprland-00FFFF?logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=white"/>
-</p>
+> ![](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+> ![](https://img.shields.io/badge/Hyprland-58E1FF?style=for-the-badge&logo=hyprland&logoColor=black)
+> ![](https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white)
+> ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+> ![](https://img.shields.io/badge/Shell-1f1f1f?style=for-the-badge&logo=gnu-bash&logoColor=white)
+> ![](https://img.shields.io/badge/Zsh-F15A24?style=for-the-badge&logo=zsh&logoColor=white)
+
 
 ## Previews
 <details>
@@ -56,4 +58,5 @@
   <summary>hyprlock</summary>
   <img src = "images/13.png" />
 </details>
+
 
