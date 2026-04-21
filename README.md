@@ -12,7 +12,7 @@ These dotfiles are tailored for my daily use and meant as a reference or inspira
 > ![](https://img.shields.io/badge/Zsh-F15A24?style=for-the-badge&logo=zsh&logoColor=white)
 
 ## Previews
-<details>
+<details open>
   <summary>Home</summary>
   <img src="images/1.png"/>
 </details>
@@ -84,4 +84,8 @@ These dotfiles are tailored for my daily use and meant as a reference or inspira
 - **cava**
 - **fastfetch**
 - **zen-browser**
+
+ License
+
+These dotfiles are open source and available for reference. Feel free to use any parts that work for your setup.
 
