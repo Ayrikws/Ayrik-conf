@@ -6,10 +6,10 @@ TERMINAL=kitty
 THEME=spotlight-dark
 
 # <<------ Directories ------>> #
-book_library="/path/to/books/"
-note_library="/path/to/notes/"
-template_library="/path/to/note/templates/"
-article_library="/path/to/articles/"
+book_library="${BOOK_LIBRARY:-$HOME/Documents/books}"
+note_library="${NOTE_LIBRARY:-$HOME/Documents/notes}"
+template_library="${TEMPLATE_LIBRARY:-$HOME/.config/rofi-menus/templates}"
+article_library="${ARTICLE_LIBRARY:-$HOME/Documents/articles}"
 
 # <<------ Options ------>> #
 declare -A actions
@@ -20,6 +20,10 @@ actions["📜 Articles"]=$article_library
 actions["⏬ Download Books"]="download_books"
 
 # <<------ Main ------>> #
+for dir in "$book_library" "$note_library" "$template_library" "$article_library"; do
+  mkdir -p "$dir"
+done
+
 create_document() {
   document_type=$(echo -e "Basic\nLaTeX\nBeamer\nRmark" | rofi -dmenu -i -p "What kind of note?" -theme $THEME)
 
@@ -72,11 +76,14 @@ create_document() {
 }
 
 open_document() {
-    FILE=$(find "$directory" -type f -name "*.pdf" -printf "%f\n" | rofi -theme $THEME -dmenu -i -p "Select PDF:")
-    if [[ -n "$FILE" ]]; then
-        FULL_PATH=$(find "$directory" -type f -name "$FILE" -print -quit)
-        zathura "$FULL_PATH"
-    fi
+  local directory="$1"
+  local file_type="${2:-pdf}"
+  
+  FILE=$(find "$directory" -type f -name "*.$file_type" -printf "%f\n" | rofi -theme $THEME -dmenu -i -p "Select $file_type:")
+  if [[ -n "$FILE" ]]; then
+    FULL_PATH=$(find "$directory" -type f -name "$FILE" -print -quit)
+    "$VIEW" "$FULL_PATH"
+  fi
 }
 
 edit_notes() {
