@@ -85,7 +85,7 @@ These dotfiles are tailored for my daily use and meant as a reference or inspira
 - **fastfetch**
 - **zen-browser**
 
- License
+ **License**
 
 These dotfiles are open source and available for reference. Feel free to use any parts that work for your setup.
 
