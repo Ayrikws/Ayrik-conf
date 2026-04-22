@@ -20,7 +20,6 @@ source $ZSH/oh-my-zsh.sh
 # -----------------------------
 # Fastfetch (system info at startup)
 # -----------------------------
-#pokemon-colorscripts --no-title -s -r | fastfetch -c $HOME/.config/fastfetch/config-pokemon.jsonc --logo-type file-raw --logo-height 10 --logo-width 5 --logo -
 fastfetch -c $HOME/.config/fastfetch/config-compact.jsonc
 
 # -----------------------------
@@ -58,8 +57,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 echo ">>> reached plugins <<<"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/home/ayrik/.lmstudio/bin"
