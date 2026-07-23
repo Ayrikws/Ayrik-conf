@@ -1,13 +1,3 @@
-------------------
----- MONITORS ----
-------------------
-hl.monitor({
-    output = "",
-    mode = "preferred",
-    position = "auto",
-    scale = 1
-})
-
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
@@ -107,3 +97,4 @@ require("keybindings")
 require("windowRules")
 require("workspaceRules")
 require("autostart")
+require("monitors")
