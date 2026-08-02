@@ -49,8 +49,8 @@ hl.bind(mainMod .. " + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }), { des
 hl.bind(mainMod .. " + CTRL + Right", hl.dsp.focus({ workspace = "r+1" }), { description = "Workspace: Focus right" })
 hl.bind(mainMod .. " + CTRL + Left",  hl.dsp.focus({ workspace = "r-1" }), { description = "Workspace: Focus left" })
 hl.bind(mainMod .. " + CTRL + Down",  hl.dsp.focus({ workspace = "empty" }), { description = "Workspace: Focus empty" })
-hl.bind(mainMod .. " + mouse_down",   hl.dsp.focus({ workspace = "r+1" }))
-hl.bind(mainMod .. " + mouse_up", 	  hl.dsp.focus({ workspace = "r-1" }))
+hl.bind(mainMod .. " + mouse_down",   hl.dsp.focus({ workspace = "r-1" }))
+hl.bind(mainMod .. " + mouse_up", 	  hl.dsp.focus({ workspace = "r+1" }))
 
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + CTRL + S",  hl.dsp.window.move({ workspace = "special:magic" }))
