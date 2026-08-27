@@ -95,6 +95,24 @@ hl.bind(mainMod .. " + ALT + Down",  hl.dsp.exec_cmd("hyprctl dispatch swapwindo
 -- HARDWARE CONTROLS --
 -----------------------
 -- Audio controls
+hl.bind("SHIFT+F2",
+    hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),
+    {
+        repeating = true,
+        locked = true,
+        description = "Media: Volume down"
+    }
+)
+
+hl.bind("SHIFT+F3",
+    hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"),
+    {
+        repeating = true,
+        locked = true,
+        description = "Media: Volume up"
+    }
+)
+
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true, locked = true, description = "Media: Volume up" })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { repeating = true, locked = true, description = "Media: Volume down" })
 hl.bind("XF86AudioMute", 	hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true, description = "Media: Toggle mute" })
